@@ -1,7 +1,7 @@
 if(process.env.NODE_ENV) {
   console.log(process.env.NODE_ENV);
   require('dotenv').config({
-   path: `${__dirname}/.env.${process.env.NODE_ENV},`
+   path: `/opt/artifact/.env.${process.env.NODE_ENV}`
   });
 } else {
   require('dotenv').config();
