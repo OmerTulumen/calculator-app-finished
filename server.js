@@ -1,7 +1,5 @@
-const path = require('path'); 
-
 if(process.env.NODE_ENV) {
-require('dotenv').config({ path: path.join(__dirname, '.env.production') });
+require("dotenv").config({ path: __dirname + `/../.env.production` });
 } else {
 require('dotenv').config();
 }
