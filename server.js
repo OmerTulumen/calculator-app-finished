@@ -1,10 +1,9 @@
+const path = require('path'); 
+
 if(process.env.NODE_ENV) {
-  console.log(process.env.NODE_ENV);
-  require('dotenv').config({
-   path:` ${__dirname}/opt/artifact/.env.${process.env.NODE_ENV}`
-  });
+require('dotenv').config({ path: path.join(__dirname, '.env.production') });
 } else {
-  require('dotenv').config();
+require('dotenv').config();
 }
 
 const app = require("./app");
