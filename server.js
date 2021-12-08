@@ -1,5 +1,5 @@
 if(process.env.NODE_ENV) {
-require("dotenv").config({ path: __dirname + `/opt/artifact/.env.production` });
+require("dotenv").config({ path: '/opt/artifact/.env.production' });
 } else {
 require('dotenv').config();
 }
