@@ -5,7 +5,7 @@ module.exports = {
         script: "./server.js",
         watch: true,
         env: {
-            "PORT": 3800,
+            "PORT": 3000,
         },
         env_production: {
             "PORT": 80,
@@ -14,3 +14,4 @@ module.exports = {
       }
   ]
 }
+
